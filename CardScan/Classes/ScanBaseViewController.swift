@@ -566,7 +566,7 @@ extension UxModelOutput {
     func argAndValueMax() -> (Int, Double) {
         var maxIdx = -1
         var maxValue = NSNumber(value: -1.0)
-        for idx in 0..<2 {
+        for idx in 0..<3 {
             let index: [NSNumber] = [NSNumber(value: idx)]
             let value = self.output1[index]
             if value.doubleValue > maxValue.doubleValue {
