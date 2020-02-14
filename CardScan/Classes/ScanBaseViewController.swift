@@ -424,23 +424,25 @@ public protocol TestingImageDataSource: AnyObject {
         }
         
         if #available(iOS 11.2, *) {
-            /*
-            if self.scanQrCode {
-                self.blockingQrModel(pixelBuffer: pixelBuffer)
+            let uxModel = UxModel()
+            let squarePixelBuffer = UIImage(cgImage: squareCardImage).pixelBuffer(width: 224, height: 224)!
+            let hasCard = (try! uxModel.prediction(input1: squarePixelBuffer)).argMax() != 1
+
+            if hasCard {
+                let model = SD7Model()
+                let pixelBuffer = UIImage(cgImage: fullCardImage).pixelBuffer(width: 224, height: 224)!
+                let output = try! model.prediction(input1: pixelBuffer)
+                let modelClass = output.argMax()
+                DispatchQueue.main.sync {
+                    if modelClass == 0 {
+                        regionOfInterestLabel?.layer.borderColor = UIColor.green.cgColor
+                    } else if modelClass == 1 {
+                        regionOfInterestLabel?.layer.borderColor = UIColor.red.cgColor
+                    }
+                }
             } else {
-                self.blockingOcrModel(squareCardImage: squareImage, fullCardImage: fullImage)
-            }*/
-            let start = Date()
-            let model = SD7Model()
-            let pixelBuffer = UIImage(cgImage: fullCardImage).pixelBuffer(width: 224, height: 224)!
-            let output = try! model.prediction(input1: pixelBuffer)
-            let modelClass = output.argMax()
-            print("prediction time -> \(-start.timeIntervalSinceNow)")
-            DispatchQueue.main.sync {
-                if modelClass == 0 {
+                DispatchQueue.main.sync {
                     regionOfInterestLabel?.layer.borderColor = UIColor.white.cgColor
-                } else if modelClass == 1 {
-                    regionOfInterestLabel?.layer.borderColor = UIColor.red.cgColor
                 }
             }
         }
@@ -545,6 +547,28 @@ extension SD7ModelOutput {
             let score_names = ["No screen", "screen"]
             let score_name = score_names[idx]
             //print("\(score_name) -> \(value)")
+            if value.doubleValue > maxValue.doubleValue {
+                maxIdx = idx
+                maxValue = value
+            }
+        }
+        
+        return (maxIdx, maxValue.doubleValue)
+    }
+}
+
+@available(iOS 11.0, *)
+extension UxModelOutput {
+    func argMax() -> Int {
+        return self.argAndValueMax().0
+    }
+    
+    func argAndValueMax() -> (Int, Double) {
+        var maxIdx = -1
+        var maxValue = NSNumber(value: -1.0)
+        for idx in 0..<2 {
+            let index: [NSNumber] = [NSNumber(value: idx)]
+            let value = self.output1[index]
             if value.doubleValue > maxValue.doubleValue {
                 maxIdx = idx
                 maxValue = value
