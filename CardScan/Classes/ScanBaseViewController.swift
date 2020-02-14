@@ -431,17 +431,15 @@ public protocol TestingImageDataSource: AnyObject {
                 self.blockingOcrModel(squareCardImage: squareImage, fullCardImage: fullImage)
             }*/
             let start = Date()
-            let model = UxModel()
-            let pixelBuffer = UIImage(cgImage: squareImage).pixelBuffer(width: 224, height: 224)!
+            let model = SD7Model()
+            let pixelBuffer = UIImage(cgImage: fullCardImage).pixelBuffer(width: 224, height: 224)!
             let output = try! model.prediction(input1: pixelBuffer)
             let modelClass = output.argMax()
-            //print("prediction time -> \(-start.timeIntervalSinceNow)")
+            print("prediction time -> \(-start.timeIntervalSinceNow)")
             DispatchQueue.main.sync {
                 if modelClass == 0 {
-                    regionOfInterestLabel?.layer.borderColor = UIColor.blue.cgColor
-                } else if modelClass == 1 {
                     regionOfInterestLabel?.layer.borderColor = UIColor.white.cgColor
-                } else if modelClass == 2 {
+                } else if modelClass == 1 {
                     regionOfInterestLabel?.layer.borderColor = UIColor.red.cgColor
                 }
             }
@@ -533,7 +531,7 @@ public protocol TestingImageDataSource: AnyObject {
 }
 
 @available(iOS 11.0, *)
-extension UxModelOutput {
+extension SD7ModelOutput {
     func argMax() -> Int {
         return self.argAndValueMax().0
     }
@@ -541,10 +539,10 @@ extension UxModelOutput {
     func argAndValueMax() -> (Int, Double) {
         var maxIdx = -1
         var maxValue = NSNumber(value: -1.0)
-        for idx in 0..<3 {
+        for idx in 0..<2 {
             let index: [NSNumber] = [NSNumber(value: idx)]
             let value = self.output1[index]
-            let score_names = ["Card", "Neg", "Pan"]
+            let score_names = ["No screen", "screen"]
             let score_name = score_names[idx]
             //print("\(score_name) -> \(value)")
             if value.doubleValue > maxValue.doubleValue {
