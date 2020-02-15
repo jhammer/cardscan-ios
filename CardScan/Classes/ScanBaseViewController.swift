@@ -557,7 +557,7 @@ extension SD7ModelOutput {
     }
 }
 
-@available(iOS 11.0, *)
+@available(iOS 11.2, *)
 extension UxModelOutput {
     func argMax() -> Int {
         return self.argAndValueMax().0
