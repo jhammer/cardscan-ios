@@ -16,7 +16,7 @@ struct RecognizedDigits {
             return nil
         }
         
-        guard let pixelBuffer = UIImage(cgImage: croppedImage).pixelBuffer(width: kImageWidth, height: kImageHeight) else {
+        guard let pixelBuffer = croppedImage.pixelBuffer(width: kImageWidth, height: kImageHeight) else {
             return nil
         }
         

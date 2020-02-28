@@ -45,6 +45,7 @@ struct PredictionResult {
         return self.numberBoxes.map { CGRect(x: $0.origin.x * scaleX, y: $0.origin.y * scaleY, width: $0.size.width * scaleX, height: $0.size.height * scaleY) }
     }
     
+    /*
     func extractImagePng(from image: CGImage, for box: CGRect) -> String? {
         #if swift(>=4.2)
             let uiImage = image.cropping(to: box).map { UIImage(cgImage: $0) }
@@ -62,4 +63,5 @@ struct PredictionResult {
         
         return newImage
     }
+ */
 }

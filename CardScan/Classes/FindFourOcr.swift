@@ -25,7 +25,7 @@ import Foundation
  
  */
 @available(iOS 11.2, *)
-struct FindFourOcr {
+class FindFourOcr {
     static var recognizeModel: FourRecognize? = nil
     static var detectModel: FindFour? = nil
     
@@ -64,6 +64,7 @@ struct FindFourOcr {
      function will help.
      */
     func warmUp() {
+        /*
         FindFourOcr.initializeModels()
         
         UIGraphicsBeginImageContext(CGSize(width: kCardWidth, height: kCardHeight))
@@ -84,9 +85,14 @@ struct FindFourOcr {
         if let pixelBuffer = newImage?.pixelBuffer(width: kBoxWidth, height: kBoxHeight) {
             let _ = try? recognizeModel.prediction(input1: pixelBuffer)
         }
+ */
     }
     
     static func initializeModels() {
+        if recognizeModel != nil && detectModel != nil {
+            return;
+        }
+        /*
         if FindFourOcr.recognizeModel == nil {
             guard let fourRecognizeUrl = CardScan.compiledModel(forResource: fourRecognizeResource, withExtension: fourRecognizeExtension) else {
                 print("Could not find URL for FourRecognize")
@@ -111,10 +117,21 @@ struct FindFourOcr {
                 return
             }
             FindFourOcr.detectModel = detectModel
+        }*/
+        let selfBundle = Bundle(for: self)
+        
+        if let url = selfBundle.url(forResource: "FourRecognize", withExtension: "mlmodelc") {
+            recognizeModel = try? FourRecognize(contentsOf: url)
         }
+
+        if let url = selfBundle.url(forResource: "FindFour", withExtension: "mlmodelc") {
+            detectModel = try? FindFour(contentsOf: url)
+        }
+
+        assert(recognizeModel != nil && detectModel != nil)
     }
     
-    mutating func predict(image: UIImage) -> String? {
+    func predict(image: CGImage) -> String? {
         let (number, numberBoxes, allBoxes, expiryBoxes, expiry, algorithm, cardDetected) = self.findFourNumber(image: image)
         self.lastDetectedBoxes = allBoxes ?? []
         self.expiry = expiry
@@ -128,7 +145,7 @@ struct FindFourOcr {
         return number
     }
     
-    func detectBoxes(prediction: FindFourOutput, image: UIImage) -> ([DetectedBox], [DetectedBox]) {
+    func detectBoxes(prediction: FindFourOutput, image: CGImage) -> ([DetectedBox], [DetectedBox]) {
         // convert model prediction to detection boxes
         var boxes: [DetectedBox] = []
         var expiryBoxes: [DetectedBox] = []
@@ -136,11 +153,11 @@ struct FindFourOcr {
             for col in 0..<kDetectionModelCols {
                 if prediction.hasDigits(row: row, col: col) {
                     let confidence = prediction.digitConfidence(row: row, col: col)
-                    let candidateRect = DetectedBox(row: row, col: col, confidence: confidence, numRows: kDetectionModelRows, numCols: kDetectionModelCols, boxSize: CGSize(width: kBoxWidth, height: kBoxHeight), cardSize: CGSize(width: kCardWidth, height: kCardHeight), imageSize: image.size)
+                    let candidateRect = DetectedBox(row: row, col: col, confidence: confidence, numRows: kDetectionModelRows, numCols: kDetectionModelCols, boxSize: CGSize(width: kBoxWidth, height: kBoxHeight), cardSize: CGSize(width: kCardWidth, height: kCardHeight), imageSize: image.size())
                     boxes.append(candidateRect)
                 } else if prediction.hasExpiry(row: row, col: col) {
                     let confidence = prediction.expiryConfidence(row: row, col: col)
-                    let candidateRect = DetectedBox(row: row, col: col, confidence: confidence, numRows: kDetectionModelRows, numCols: kDetectionModelCols, boxSize: CGSize(width: kBoxWidth, height: kBoxHeight), cardSize: CGSize(width: kCardWidth, height: kCardHeight), imageSize: image.size)
+                    let candidateRect = DetectedBox(row: row, col: col, confidence: confidence, numRows: kDetectionModelRows, numCols: kDetectionModelCols, boxSize: CGSize(width: kBoxWidth, height: kBoxHeight), cardSize: CGSize(width: kCardWidth, height: kCardHeight), imageSize: image.size())
                     expiryBoxes.append(candidateRect)
                 }
             }
@@ -149,7 +166,7 @@ struct FindFourOcr {
         return (boxes, expiryBoxes)
     }
     
-    func findFourNumber(image: UIImage) -> (String?, [CGRect]?, [CGRect]?, [CGRect]?, Expiry?, String?, Bool?) {
+    func findFourNumber(image: CGImage) -> (String?, [CGRect]?, [CGRect]?, [CGRect]?, Expiry?, String?, Bool?) {
         var algorithm: String?
         
         FindFourOcr.initializeModels()
@@ -167,13 +184,10 @@ struct FindFourOcr {
         guard let prediction = try? detectModel.prediction(input: modelInput) else {
             return (nil, nil, nil, nil, nil, nil, nil)
         }
-        guard let cgImage = image.cgImage else {
-            return (nil, nil, nil, nil, nil, nil, nil)
-        }
         
         let (boxes, expiryBoxes) = self.detectBoxes(prediction: prediction, image: image)
         let postDetectionAlgorithm = PostDetectionAlgorithm(boxes: boxes)
-        var recognizeNumbers = RecognizeNumbers(image: cgImage, numRows: kDetectionModelRows,
+        var recognizeNumbers = RecognizeNumbers(image: image, numRows: kDetectionModelRows,
                                                 numCols: kDetectionModelCols)
 
         var lines = postDetectionAlgorithm.horizontalNumbers()
@@ -214,7 +228,7 @@ struct FindFourOcr {
         
         let candidateExpiry = expiryBoxes.sorted { $0.confidence > $1.confidence }.prefix(1).map { $0.rect }
 
-        let expiry = candidateExpiry.first.flatMap { Expiry.from(image: cgImage, within: $0) }
+        let expiry = candidateExpiry.first.flatMap { Expiry.from(image: image, within: $0) }
         
         return (number, numberBoxes, allBoxes, candidateExpiry, expiry, algorithm, didDetectCard)
     }

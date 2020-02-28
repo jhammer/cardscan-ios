@@ -65,7 +65,7 @@ public struct ScanStats {
         
         return endTime.timeIntervalSince(self.startTime)
     }
-    
+    /*
     func image(from base64String: String?) -> UIImage? {
         guard let string = base64String else {
             return nil
@@ -73,4 +73,5 @@ public struct ScanStats {
         
         return Data(base64Encoded: string).flatMap { UIImage(data: $0) }
     }
+     */
 }

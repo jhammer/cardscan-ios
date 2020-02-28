@@ -23,6 +23,30 @@
 		52B55240ED54B8A47A5DAB40AA64C964 /* CardScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1052E4C0FA3B3CD6F4758D7A469851 /* CardScan-dummy.m */; };
 		5DDCE27E91AEEE4D95A1010EF555B3AF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F818BDFB8A3A4DF8C43FA4B1A838FE /* API.swift */; };
 		5FA3F0EDF8921B8D68390A4D5E0C7604 /* UIImage+pixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14EF28B8F0EEA5E5872289259582F2 /* UIImage+pixelBuffer.swift */; };
+		63190A6224098706008279C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63190A6124098706008279C3 /* AppDelegate.swift */; };
+		63190A6424098706008279C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63190A6324098706008279C3 /* ViewController.swift */; };
+		63190A6624098707008279C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63190A6524098707008279C3 /* Assets.xcassets */; };
+		63190A6924098707008279C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63190A6724098707008279C3 /* Main.storyboard */; };
+		63190A8B2409C69C008279C3 /* CardScanCoreMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 63190A892409C69C008279C3 /* CardScanCoreMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63190A8F2409C6B9008279C3 /* FindFour.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 65DC47A61F6E89CB0E4667F330C626BD /* FindFour.mlmodelc */; };
+		63190A902409C6B9008279C3 /* FourRecognize.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = BF84511E87176078FE08D631E99AB2F6 /* FourRecognize.mlmodelc */; };
+		63190A912409C730008279C3 /* FindFourOcr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9297B1CAAF2EFFDDDF242CC1DAFCF7 /* FindFourOcr.swift */; };
+		63190A922409C730008279C3 /* Ocr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561708AA6AD6AF81AA50F4A669C7E82 /* Ocr.swift */; };
+		63190A932409C730008279C3 /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E742EC83908A3319DF53C4BD1E652 /* PredictionResult.swift */; };
+		63190A942409C730008279C3 /* RecognizedDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E04E0C5A0FD76020EE319992696B2 /* RecognizedDigits.swift */; };
+		63190A952409C730008279C3 /* ScanEventsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB30A3DC388DBE3B484279BE133F6B /* ScanEventsProtocol.swift */; };
+		63190A962409C730008279C3 /* ScanStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B51CCD4AA6022086FEC251D12D195A /* ScanStats.swift */; };
+		63190A972409C730008279C3 /* CGImage+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63190A7624099AD5008279C3 /* CGImage+PixelBuffer.swift */; };
+		63190A982409C739008279C3 /* ModelOutputExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC192805B991B3DCCE9A29DBE5AB436A /* ModelOutputExtensions.swift */; };
+		63190A992409C73F008279C3 /* CardNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCABED45C016004FE053536839FF3B9 /* CardNetwork.swift */; };
+		63190A9A2409C753008279C3 /* PostDetectionAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106CB0278EE581CF1076C49D31A62256 /* PostDetectionAlgorithm.swift */; };
+		63190A9B2409C75A008279C3 /* CreditCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE0980ED1FD4D6FC7393162B67B82C /* CreditCardUtils.swift */; };
+		63190A9C2409C760008279C3 /* Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA294C257601D347459BB12059C947 /* Expiry.swift */; };
+		63190A9D2409C767008279C3 /* DetectedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFF5EAD93958596A010222018DCF7E /* DetectedBox.swift */; };
+		63190A9E2409C76D008279C3 /* RecognizeNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F5B6FE84195AA9651F678BDA98BE /* RecognizeNumbers.swift */; };
+		63190A9F2409C774008279C3 /* GeneratedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D9C9F147230D23EEF20B87A5E6807B /* GeneratedModels.swift */; };
+		63190AA22409C80D008279C3 /* CardScanCoreMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63190A872409C69C008279C3 /* CardScanCoreMac.framework */; };
+		63190AA42409C87E008279C3 /* CardScanCoreMac.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 63190A872409C69C008279C3 /* CardScanCoreMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		64C382FDD11B44E41FB83139A1335F8F /* ModelOutputExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC192805B991B3DCCE9A29DBE5AB436A /* ModelOutputExtensions.swift */; };
 		6724CF6A8911A294CA04514F619BF396 /* GeneratedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D9C9F147230D23EEF20B87A5E6807B /* GeneratedModels.swift */; };
 		6802421FA76287F2F636202E94B9F700 /* DetectedAllBoxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADEDFC6E16D68F0B3EBCDD4CE4BD63 /* DetectedAllBoxes.swift */; };
@@ -76,6 +100,13 @@
 			remoteGlobalIDString = 992C704FCECE14F8E1B24C561D450C2E;
 			remoteInfo = "Pods-CardScan_Example";
 		};
+		63190AA02409C7EE008279C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63190A862409C69C008279C3;
+			remoteInfo = CardScanCoreMac;
+		};
 		71ABF33962AE7DC339FB60D9C9A51C7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -106,11 +137,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		63190AA32409C875008279C3 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				63190AA42409C87E008279C3 /* CardScanCoreMac.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		02EC70527C3C1619CBC59FDEC434536D /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CardScan/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		034527E841A1616BBE86E5FFE98F611C /* ScanConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanConfiguration.swift; path = CardScan/Classes/ScanConfiguration.swift; sourceTree = "<group>"; };
 		06DF56631CA88A5741553EC08132A46F /* Pods-CardScan_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardScan_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0BBC9538B38236B253752CC3B1CD0DF0 /* CardScan.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CardScan.bundle; path = "CardScan-CardScan.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBC9538B38236B253752CC3B1CD0DF0 /* CardScan.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardScan.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D068BC66205319201DAEEEA63AD77F0 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = CardScan/Classes/CGRectExtension.swift; sourceTree = "<group>"; };
 		106CB0278EE581CF1076C49D31A62256 /* PostDetectionAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostDetectionAlgorithm.swift; path = CardScan/Classes/PostDetectionAlgorithm.swift; sourceTree = "<group>"; };
 		12E90AD9B672BC66F408842E288588A8 /* VideoFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoFeed.swift; path = CardScan/Classes/VideoFeed.swift; sourceTree = "<group>"; };
@@ -128,43 +173,54 @@
 		3561708AA6AD6AF81AA50F4A669C7E82 /* Ocr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ocr.swift; path = CardScan/Classes/Ocr.swift; sourceTree = "<group>"; };
 		35A9E534D04407E7CAA6B54CB5F1C61C /* PredictionAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PredictionAPI.swift; path = CardScan/Classes/PredictionAPI.swift; sourceTree = "<group>"; };
 		35B7F5B6FE84195AA9651F678BDA98BE /* RecognizeNumbers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizeNumbers.swift; path = CardScan/Classes/RecognizeNumbers.swift; sourceTree = "<group>"; };
-		37D314FA58B718C8D1E4397DF28D3E92 /* Pods_CardScan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CardScan_Example.framework; path = "Pods-CardScan_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D314FA58B718C8D1E4397DF28D3E92 /* Pods_CardScan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardScan_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C14347C59C76392949D638C1BE6F0DF /* AppState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = CardScan/Classes/AppState.swift; sourceTree = "<group>"; };
 		3D3D5423E36B2D83C45A2CDC4FFD6CAF /* CardScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardScan-umbrella.h"; sourceTree = "<group>"; };
 		3F08E0F9D8B225015E5F2BFE5EC7D035 /* Pods-CardScan_ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardScan_ExampleTests-dummy.m"; sourceTree = "<group>"; };
 		418724842C3DDFD867B7A3CBC8C8A2D3 /* Pods-CardScan_ExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CardScan_ExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		46DC03BD80E2956D4C1C6E7A463DF7CC /* Pods-CardScan_ExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardScan_ExampleUITests-dummy.m"; sourceTree = "<group>"; };
-		47D775EE4D1104200D8E8829E142AB6A /* Pods_CardScan_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CardScan_ExampleUITests.framework; path = "Pods-CardScan_ExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D775EE4D1104200D8E8829E142AB6A /* Pods_CardScan_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardScan_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1052E4C0FA3B3CD6F4758D7A469851 /* CardScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CardScan-dummy.m"; sourceTree = "<group>"; };
 		537E04E0C5A0FD76020EE319992696B2 /* RecognizedDigits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizedDigits.swift; path = CardScan/Classes/RecognizedDigits.swift; sourceTree = "<group>"; };
 		5E8C6DF275752BA22E147DDD056F2B63 /* Pods-CardScan_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardScan_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		65DC47A61F6E89CB0E4667F330C626BD /* FindFour.mlmodelc */ = {isa = PBXFileReference; includeInIndex = 1; name = FindFour.mlmodelc; path = CardScan/Assets/FindFour.mlmodelc; sourceTree = "<group>"; };
+		63190A5F24098706008279C3 /* maccard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maccard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63190A6124098706008279C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63190A6324098706008279C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63190A6524098707008279C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63190A6824098707008279C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63190A6A24098707008279C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63190A6B24098707008279C3 /* maccard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maccard.entitlements; sourceTree = "<group>"; };
+		63190A7624099AD5008279C3 /* CGImage+PixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CGImage+PixelBuffer.swift"; path = "CardScan/Classes/CGImage+PixelBuffer.swift"; sourceTree = "<group>"; };
+		63190A872409C69C008279C3 /* CardScanCoreMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardScanCoreMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63190A892409C69C008279C3 /* CardScanCoreMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardScanCoreMac.h; sourceTree = "<group>"; };
+		63190A8A2409C69C008279C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DC47A61F6E89CB0E4667F330C626BD /* FindFour.mlmodelc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = FindFour.mlmodelc; path = CardScan/Assets/FindFour.mlmodelc; sourceTree = "<group>"; };
 		68DF414DB737DE9F08A171DE583BCE5D /* CardScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CardScan.xcconfig; sourceTree = "<group>"; };
 		6ABA294C257601D347459BB12059C947 /* Expiry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expiry.swift; path = CardScan/Classes/Expiry.swift; sourceTree = "<group>"; };
 		6C75C6A60DC603E2981167EBE03791CC /* Pods-CardScan_ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CardScan_ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E4A0C524729EC596EF748B192128499 /* Pods-CardScan_ExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardScan_ExampleTests-frameworks.sh"; sourceTree = "<group>"; };
 		6F22D99C9205E11A26243D541C2CF27C /* Pods-CardScan_ExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CardScan_ExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
-		704FD45B9A3CEB394F814C7DA9401DB5 /* CardScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CardScan.framework; path = CardScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		704FD45B9A3CEB394F814C7DA9401DB5 /* CardScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741A6EE5ED2F172DC51CCEDE337923EA /* Pods-CardScan_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardScan_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7460CC649B352EBA9F687DAA8906CC87 /* Pods-CardScan_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardScan_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		75ADEDFC6E16D68F0B3EBCDD4CE4BD63 /* DetectedAllBoxes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectedAllBoxes.swift; path = CardScan/Classes/DetectedAllBoxes.swift; sourceTree = "<group>"; };
 		787E742EC83908A3319DF53C4BD1E652 /* PredictionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PredictionResult.swift; path = CardScan/Classes/PredictionResult.swift; sourceTree = "<group>"; };
 		7AD8363791E64510C333BCA415E66AD6 /* CardScan.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CardScan.storyboard; path = CardScan/Assets/CardScan.storyboard; sourceTree = "<group>"; };
 		7BBFD92A7F487E99CF2EE2CB8F81A823 /* SsdDetect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SsdDetect.swift; path = CardScan/Classes/SsdDetect.swift; sourceTree = "<group>"; };
-		7CFCD0FEEB7E0D35BA1DFC9FF9670C64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7CFCD0FEEB7E0D35BA1DFC9FF9670C64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7DB27DFB297D7A7E0C2D251AB17C29F8 /* Pods-CardScan_ExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CardScan_ExampleUITests.modulemap"; sourceTree = "<group>"; };
 		7E9F8E0B6B90EBAD5A06F1035BB362D6 /* PriorsGen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorsGen.swift; path = CardScan/Classes/PriorsGen.swift; sourceTree = "<group>"; };
 		8489EA6B6B1EB68746C396AA92F2E865 /* NMS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMS.swift; path = CardScan/Classes/NMS.swift; sourceTree = "<group>"; };
 		86B51CCD4AA6022086FEC251D12D195A /* ScanStats.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanStats.swift; path = CardScan/Classes/ScanStats.swift; sourceTree = "<group>"; };
 		87177E96923392E6353138A777915DD0 /* Pods-CardScan_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardScan_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		945BBAD8DFD4796BE02FF289A49A4261 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		945BBAD8DFD4796BE02FF289A49A4261 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9993926088E7489340DBB6602A45C25D /* Pods-CardScan_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CardScan_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0FE5B25D685D3AFCD363BB7416B228F /* Pods-CardScan_ExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardScan_ExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A1308A9EE135E70590DD3E266C6CA700 /* Pods-CardScan_ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CardScan_ExampleTests-umbrella.h"; sourceTree = "<group>"; };
 		A2F818BDFB8A3A4DF8C43FA4B1A838FE /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = CardScan/Classes/API.swift; sourceTree = "<group>"; };
 		A464CC37B59785A3F9B65F99298D7D3C /* SSD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSD.swift; path = CardScan/Classes/SSD.swift; sourceTree = "<group>"; };
-		A7BEE64507296528D8057EE49736BDFD /* CardScan.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CardScan.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7BEE64507296528D8057EE49736BDFD /* CardScan.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CardScan.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA01E5B30B54C2571AD327736A44B04F /* CardScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CardScan-Info.plist"; sourceTree = "<group>"; };
 		B111F7E73CE47B647EFD92F1353F1008 /* ResourceBundle-CardScan-CardScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CardScan-CardScan-Info.plist"; sourceTree = "<group>"; };
 		B3D9C9F147230D23EEF20B87A5E6807B /* GeneratedModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeneratedModels.swift; path = CardScan/Classes/GeneratedModels.swift; sourceTree = "<group>"; };
@@ -173,7 +229,7 @@
 		B99ED949FACB88F301300B0C22FD9618 /* Pods-CardScan_ExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CardScan_ExampleUITests-Info.plist"; sourceTree = "<group>"; };
 		BDE16F2D417E4B470FF336342C789E52 /* Pods-CardScan_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CardScan_Example-dummy.m"; sourceTree = "<group>"; };
 		BE55EF84B81A2F97DECC25CF2E1A8311 /* Pods-CardScan_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CardScan_Example-Info.plist"; sourceTree = "<group>"; };
-		BF84511E87176078FE08D631E99AB2F6 /* FourRecognize.mlmodelc */ = {isa = PBXFileReference; includeInIndex = 1; name = FourRecognize.mlmodelc; path = CardScan/Assets/FourRecognize.mlmodelc; sourceTree = "<group>"; };
+		BF84511E87176078FE08D631E99AB2F6 /* FourRecognize.mlmodelc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = FourRecognize.mlmodelc; path = CardScan/Assets/FourRecognize.mlmodelc; sourceTree = "<group>"; };
 		C2FFF5EAD93958596A010222018DCF7E /* DetectedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectedBox.swift; path = CardScan/Classes/DetectedBox.swift; sourceTree = "<group>"; };
 		C6DC014A7C97895B85F0296152D1ACFD /* CornerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerView.swift; path = CardScan/Classes/CornerView.swift; sourceTree = "<group>"; };
 		C86BDC0C6C109B423852CBB9932D4EDF /* CardScan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardScan.swift; path = CardScan/Classes/CardScan.swift; sourceTree = "<group>"; };
@@ -185,7 +241,7 @@
 		EA14EF28B8F0EEA5E5872289259582F2 /* UIImage+pixelBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+pixelBuffer.swift"; path = "CardScan/Classes/UIImage+pixelBuffer.swift"; sourceTree = "<group>"; };
 		EDF0E5B99E89D61CB52287BEAD563AA4 /* Pods-CardScan_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardScan_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F24B32594CCE53E699907ABD6A6A0440 /* Pods-CardScan_ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CardScan_ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F396163755D56F466F82263D8E177356 /* Pods_CardScan_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CardScan_ExampleTests.framework; path = "Pods-CardScan_ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F396163755D56F466F82263D8E177356 /* Pods_CardScan_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardScan_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DBF9F9625B054765A58F9F06EB990D /* CardScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardScan-prefix.pch"; sourceTree = "<group>"; };
 		F7CA4BD6EA844A98E3ECBF431189A0EB /* Pods-CardScan_ExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CardScan_ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		FBFEB96FFF2EB3140488A2DE6EDAE458 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = CardScan/Classes/BlurView.swift; sourceTree = "<group>"; };
@@ -194,6 +250,21 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		200A79BCFA3C64BCD1E481FBE5B3A764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63190A5C24098706008279C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63190AA22409C80D008279C3 /* CardScanCoreMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63190A842409C69C008279C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,6 +341,28 @@
 			path = "Example/Pods/Target Support Files/CardScan";
 			sourceTree = "<group>";
 		};
+		63190A6024098706008279C3 /* maccard */ = {
+			isa = PBXGroup;
+			children = (
+				63190A6124098706008279C3 /* AppDelegate.swift */,
+				63190A6324098706008279C3 /* ViewController.swift */,
+				63190A6524098707008279C3 /* Assets.xcassets */,
+				63190A6724098707008279C3 /* Main.storyboard */,
+				63190A6A24098707008279C3 /* Info.plist */,
+				63190A6B24098707008279C3 /* maccard.entitlements */,
+			);
+			path = maccard;
+			sourceTree = "<group>";
+		};
+		63190A882409C69C008279C3 /* CardScanCoreMac */ = {
+			isa = PBXGroup;
+			children = (
+				63190A892409C69C008279C3 /* CardScanCoreMac.h */,
+				63190A8A2409C69C008279C3 /* Info.plist */,
+			);
+			path = CardScanCoreMac;
+			sourceTree = "<group>";
+		};
 		6CEED8FF41A2FF85EF7B0EFED91532DE /* CardScan */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +399,8 @@
 				37D314FA58B718C8D1E4397DF28D3E92 /* Pods_CardScan_Example.framework */,
 				F396163755D56F466F82263D8E177356 /* Pods_CardScan_ExampleTests.framework */,
 				47D775EE4D1104200D8E8829E142AB6A /* Pods_CardScan_ExampleUITests.framework */,
+				63190A5F24098706008279C3 /* maccard.app */,
+				63190A872409C69C008279C3 /* CardScanCoreMac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,6 +461,7 @@
 				298DDCDC63F78514E7D75D7AB52F5CBA /* SSDOutputExtensions.swift */,
 				234C090EDD7BA6ACD07DF80FC6AA0E15 /* Torch.swift */,
 				EA14EF28B8F0EEA5E5872289259582F2 /* UIImage+pixelBuffer.swift */,
+				63190A7624099AD5008279C3 /* CGImage+PixelBuffer.swift */,
 				12E90AD9B672BC66F408842E288588A8 /* VideoFeed.swift */,
 				9DDE9144B7B03F98352D5027B9307CEC /* Resources */,
 			);
@@ -385,6 +481,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				A48BE968D38DD11741E7540B51579F50 /* Development Pods */,
+				63190A6024098706008279C3 /* maccard */,
+				63190A882409C69C008279C3 /* CardScanCoreMac */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				99F45B7B7FABC011494735AD103CE39E /* Products */,
 				092DEEFB828950FDFCE144CD095FB9EF /* Targets Support Files */,
@@ -452,6 +550,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63190A822409C69C008279C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63190A8B2409C69C008279C3 /* CardScanCoreMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7184CF12803E6B002BE2980F95B7BB62 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,6 +577,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		63190A5E24098706008279C3 /* maccard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63190A6E24098707008279C3 /* Build configuration list for PBXNativeTarget "maccard" */;
+			buildPhases = (
+				63190A5B24098706008279C3 /* Sources */,
+				63190AA32409C875008279C3 /* Copy Files */,
+				63190A5C24098706008279C3 /* Frameworks */,
+				63190A5D24098706008279C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63190AA12409C7EE008279C3 /* PBXTargetDependency */,
+			);
+			name = maccard;
+			productName = maccard;
+			productReference = 63190A5F24098706008279C3 /* maccard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63190A862409C69C008279C3 /* CardScanCoreMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63190A8C2409C69C008279C3 /* Build configuration list for PBXNativeTarget "CardScanCoreMac" */;
+			buildPhases = (
+				63190A822409C69C008279C3 /* Headers */,
+				63190A832409C69C008279C3 /* Sources */,
+				63190A842409C69C008279C3 /* Frameworks */,
+				63190A852409C69C008279C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardScanCoreMac;
+			productName = CardScanCoreMac;
+			productReference = 63190A872409C69C008279C3 /* CardScanCoreMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		761B5C2386455E5C89ECC3C924D0162C /* Pods-CardScan_ExampleUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F56F82CE5340D717CB1BF7438E1FAA9 /* Build configuration list for PBXNativeTarget "Pods-CardScan_ExampleUITests" */;
@@ -572,8 +715,20 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					63190A5E24098706008279C3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = 9Y9N8CB2TP;
+						ProvisioningStyle = Automatic;
+					};
+					63190A862409C69C008279C3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = 9Y9N8CB2TP;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -581,6 +736,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 99F45B7B7FABC011494735AD103CE39E /* Products */;
@@ -592,6 +748,8 @@
 				992C704FCECE14F8E1B24C561D450C2E /* Pods-CardScan_Example */,
 				CDA2C22240BA4BF768E80D53DD7EBC7E /* Pods-CardScan_ExampleTests */,
 				761B5C2386455E5C89ECC3C924D0162C /* Pods-CardScan_ExampleUITests */,
+				63190A5E24098706008279C3 /* maccard */,
+				63190A862409C69C008279C3 /* CardScanCoreMac */,
 			);
 		};
 /* End PBXProject section */
@@ -608,6 +766,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63190A5D24098706008279C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63190A6624098707008279C3 /* Assets.xcassets in Resources */,
+				63190A6924098707008279C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63190A852409C69C008279C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63190A8F2409C6B9008279C3 /* FindFour.mlmodelc in Resources */,
+				63190A902409C6B9008279C3 /* FourRecognize.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +836,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63190A5B24098706008279C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63190A6424098706008279C3 /* ViewController.swift in Sources */,
+				63190A6224098706008279C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63190A832409C69C008279C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63190A9F2409C774008279C3 /* GeneratedModels.swift in Sources */,
+				63190A9E2409C76D008279C3 /* RecognizeNumbers.swift in Sources */,
+				63190A9D2409C767008279C3 /* DetectedBox.swift in Sources */,
+				63190A9C2409C760008279C3 /* Expiry.swift in Sources */,
+				63190A9B2409C75A008279C3 /* CreditCardUtils.swift in Sources */,
+				63190A9A2409C753008279C3 /* PostDetectionAlgorithm.swift in Sources */,
+				63190A992409C73F008279C3 /* CardNetwork.swift in Sources */,
+				63190A982409C739008279C3 /* ModelOutputExtensions.swift in Sources */,
+				63190A912409C730008279C3 /* FindFourOcr.swift in Sources */,
+				63190A922409C730008279C3 /* Ocr.swift in Sources */,
+				63190A932409C730008279C3 /* PredictionResult.swift in Sources */,
+				63190A942409C730008279C3 /* RecognizedDigits.swift in Sources */,
+				63190A952409C730008279C3 /* ScanEventsProtocol.swift in Sources */,
+				63190A962409C730008279C3 /* ScanStats.swift in Sources */,
+				63190A972409C730008279C3 /* CGImage+PixelBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +948,11 @@
 			target = 992C704FCECE14F8E1B24C561D450C2E /* Pods-CardScan_Example */;
 			targetProxy = FDC27BCBE2622476D3914D2418F0A451 /* PBXContainerItemProxy */;
 		};
+		63190AA12409C7EE008279C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63190A862409C69C008279C3 /* CardScanCoreMac */;
+			targetProxy = 63190AA02409C7EE008279C3 /* PBXContainerItemProxy */;
+		};
 		6354B7B619D9CB7D2E049A2F3543F2FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CardScan;
@@ -754,6 +966,17 @@
 			targetProxy = 2EA5A8EC17C4962FDDA6B08EEF75E12A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63190A6724098707008279C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63190A6824098707008279C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		08FF1AEC092B8C1A52ED7ED3096531CF /* Debug */ = {
@@ -1006,6 +1229,106 @@
 			};
 			name = Release;
 		};
+		63190A6C24098707008279C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = maccard/maccard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9Y9N8CB2TP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = maccard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernieware.maccard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		63190A6D24098707008279C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = maccard/maccard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9Y9N8CB2TP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = maccard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernieware.maccard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		63190A8D2409C69C008279C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9Y9N8CB2TP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CardScanCoreMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernieware.CardScanCoreMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63190A8E2409C69C008279C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9Y9N8CB2TP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CardScanCoreMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ernieware.CardScanCoreMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7705AA241FBCA569D7FFB75C95D7A137 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 741A6EE5ED2F172DC51CCEDE337923EA /* Pods-CardScan_Example.debug.xcconfig */;
@@ -1110,8 +1433,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1210,6 +1532,24 @@
 			buildConfigurations = (
 				196DFA3E4A09A28224918543529A1885 /* Debug */,
 				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63190A6E24098707008279C3 /* Build configuration list for PBXNativeTarget "maccard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63190A6C24098707008279C3 /* Debug */,
+				63190A6D24098707008279C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63190A8C2409C69C008279C3 /* Build configuration list for PBXNativeTarget "CardScanCoreMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63190A8D2409C69C008279C3 /* Debug */,
+				63190A8E2409C69C008279C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
